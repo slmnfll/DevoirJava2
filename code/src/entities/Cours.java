@@ -7,7 +7,7 @@ public class Cours {
     private LocalDate date;
     private LocalTime heureDB;
     private LocalTime heureFN;
-    public Cours(){id = counter++;}
+    public Cours(){id = ++counter;}
     public Cours(LocalDate date, LocalTime heureDB, LocalTime heureFN){
         this.id = ++counter;
         this.date = date;
