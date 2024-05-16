@@ -7,6 +7,7 @@ public class Cours {
     private LocalDate date;
     private LocalTime heureDB;
     private LocalTime heureFN;
+    private Professeur prof;
     public Cours(){id = ++counter;}
     public Cours(LocalDate date, LocalTime heureDB, LocalTime heureFN){
         this.id = ++counter;
@@ -37,6 +38,12 @@ public class Cours {
     }
     public void setHeureFN(LocalTime heureFN) {
         this.heureFN = heureFN;
+    }
+    public Professeur getProf() {
+        return prof;
+    }
+    public void setProf(Professeur prof) {
+        this.prof = prof;
     }
     @Override
     public String toString() {
