@@ -8,7 +8,7 @@ public class Cour {
     private LocalTime heureDB;
     private LocalTime heureFN;
     public Cour(){counter++;}
-    public Cour(LocalTime heureDB, LocalTime heureFN){
+    public Cour(LocalDate date,LocalTime heureDB, LocalTime heureFN){
         this.id = ++counter;
         this.heureDB = heureDB;
         this.heureFN = heureFN;

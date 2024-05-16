@@ -1,20 +1,21 @@
 package services;
-import entities.Cour;
+import entities.Cours;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-public class CourService extends Service<Cour> {
-    private final List<Cour> cours = new ArrayList<>();
+public class CourService extends Service<Cours> {
+    private final List<Cours> cours = new ArrayList<>();
     public CourService(){}
     public CourService(Scanner scanner){
         this.scanner = scanner;
     }
     @Override
-    public void save(Cour object) {
+    public void save(Cours object) {
         cours.add(object);
     }
     @Override
-    public List<Cour> show() {
+    public List<Cours> show() {
         return cours;
     }
 }
