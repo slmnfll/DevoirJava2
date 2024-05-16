@@ -10,6 +10,7 @@ public class Cours {
     public Cours(){counter++;}
     public Cours(LocalDate date, LocalTime heureDB, LocalTime heureFN){
         this.id = ++counter;
+        this.date = date;
         this.heureDB = heureDB;
         this.heureFN = heureFN;
     }
