@@ -1,3 +1,4 @@
+import entities.Cours;
 import entities.Professeur;
 import services.CoursService;
 import services.ProfesseurService;
@@ -27,7 +28,9 @@ public class Main {
                     if (prof == null) {
                         System.out.println("Le prof n'existe pas.");
                     } else {
-                        prof.addCours(coursVue.saisie());
+                        Cours cours = coursVue.saisie();
+                        prof.addCours(cours);
+                        cours.setProf(prof);
                     }
                 }
                 case 4 -> coursVue.affiche();
