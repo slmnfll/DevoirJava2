@@ -1,14 +1,14 @@
 package entities;
 import java.time.LocalDate;
 import java.time.LocalTime;
-public class Cour {
-    private int counter;
+public class Cours {
+    private static int counter;
     private int id;
     private LocalDate date;
     private LocalTime heureDB;
     private LocalTime heureFN;
-    public Cour(){counter++;}
-    public Cour(LocalDate date,LocalTime heureDB, LocalTime heureFN){
+    public Cours(){counter++;}
+    public Cours(LocalDate date, LocalTime heureDB, LocalTime heureFN){
         this.id = ++counter;
         this.heureDB = heureDB;
         this.heureFN = heureFN;
@@ -39,6 +39,6 @@ public class Cour {
     }
     @Override
     public String toString() {
-        return "Cour{" + "id=" + id + ", date=" + date + ", heureDB=" + heureDB + ", heureFN=" + heureFN + '}';
+        return "Cours{" + "id=" + id + ", date=" + date + ", heureDB=" + heureDB + ", heureFN=" + heureFN + '}';
     }
 }

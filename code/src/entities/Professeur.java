@@ -1,6 +1,4 @@
 package entities;
-import views.ProfesseurVue;
-
 import java.util.ArrayList;
 import java.util.List;
 public class Professeur {
@@ -8,7 +6,7 @@ public class Professeur {
     private int id;
     private String nom;
     private String prenom;
-    private List<Cour> cours = new ArrayList<>();
+    private List<Cours> cours = new ArrayList<>();
     public Professeur(){counter++;}
     public Professeur(String nom, String prenom){
         this.id = ++counter;
@@ -33,11 +31,11 @@ public class Professeur {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
-    public List<Cour> getCours() {
+    public List<Cours> getCours() {
         return cours;
     }
-    public void addCour(Cour cour) {
-        cours.add(cour);
+    public void addCours(Cours cours) {
+        this.cours.add(cours);
     }
     @Override
     public String toString() {

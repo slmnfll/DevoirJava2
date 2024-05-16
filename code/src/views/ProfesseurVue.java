@@ -1,7 +1,6 @@
 package views;
 import entities.Professeur;
 import services.ProfesseurService;
-import java.util.List;
 import java.util.Scanner;
 public class ProfesseurVue extends Vue<Professeur> {
     private ProfesseurService professeurService;
